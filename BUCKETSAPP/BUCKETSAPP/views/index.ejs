@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>BUCKETSAPP</title>
+    
+<style> /*card image size*/
+    .card-img-top {
+      height: 150px;
+      object-fit: cover;
+    }
+
+    
+.title {
+  font-size: 60px;       /* bigger text */
+  color: #ffffff;        /* white color */
+  font-weight: bold;     /* thicker text */
+  text-shadow: 2px 2px 8px rgb(28, 36, 8); /* glow effect */
+}
+
+  body {
+    background-image: url('/images/art2.jpg');
+    background-size: cover;      /* fills the whole screen */
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+   
+  </style>
+
+
+
+</head>
+<body>
+
+<%- include('partials/navbar.ejs') %>
+
+<div class="container text-center mt-5">
+    <h1 class="mb-4 title">Welcome to BUCKETSAPP</h1>
+
+    <div class="row">
+
+        <!-- TRAVEL -->
+        <div class="col-md-4 mb-4">
+            <a href="/travel" style="text-decoration:none; color:black;">
+                <div class="card">
+                    <img src="/images/travel.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>TRAVEL</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- FOOD -->
+        <div class="col-md-4 mb-4">
+            <a href="/food" style="text-decoration:none; color:black;">
+                <div class="card">
+                    <img src="/images/food.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>FOOD</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- TASKS -->
+        <div class="col-md-4 mb-4">
+            <a href="/tasks" style="text-decoration:none; color:black;">
+                <div class="card">
+                    <img src="/images/tasks.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>TASKS</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
